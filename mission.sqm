@@ -5,17 +5,21 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=129;
+	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=54;
+		nextID=55;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
 	};
 	class Camera
 	{
 		pos[]={10771.115,59.976341,6439.998};
-		dir[]={0.501836,-0.67306918,0.54338193};
-		up[]={0.45667773,0.73954594,0.49448338};
-		aside[]={0.73468101,-1.095701e-006,-0.67850631};
+		dir[]={0.55167979,-0.65262878,0.51947308};
+		up[]={0.47516781,0.75764215,0.44742602};
+		aside[]={0.68558174,-1.1058582e-006,-0.72808439};
 	};
 };
 binarizationWanted=0;
@@ -41,13 +45,14 @@ addons[]=
 	"ace_medical_menu",
 	"ace_weather",
 	"ace_zeus",
-	"A3_Modules_F_Curator_Curator"
+	"A3_Modules_F_Curator_Curator",
+	"A3_Ui_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=21;
+		items=22;
 		class Item0
 		{
 			className="rhsusf_c_troops";
@@ -195,6 +200,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
+		class Item21
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
 	};
 };
 randomSeed=13697245;
@@ -257,7 +269,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=29;
+		items=30;
 		class Item0
 		{
 			dataType="Group";
@@ -1693,11 +1705,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={10100.965,89.453003,6775.0981};
+				position[]={10100.965,89.452728,6775.0981};
 			};
 			id=32;
 			type="ACE_ModuleRespawn";
-			atlOffset=25.529282;
+			atlOffset=25.529007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -1734,7 +1746,7 @@ class Mission
 									"BOOL"
 								};
 							};
-							value=0;
+							value=1;
 						};
 					};
 				};
@@ -3646,6 +3658,15 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item29
+		{
+			dataType="Marker";
+			position[]={10793.812,-6.2403846e-021,6482.1001};
+			name="respawn_west";
+			type="Empty";
+			id=54;
+			atlOffset=-3.9000001;
 		};
 	};
 };
